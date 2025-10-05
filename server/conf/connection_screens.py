@@ -25,14 +25,19 @@ from django.conf import settings
 from evennia import utils
 
 CONNECTION_SCREEN = f"""
-|y==============================================================|n
- Welcome to |g{settings.SERVERNAME}|n, version {utils.get_evennia_version("short")}!
-
- If you have an existing account, connect to it by typing:
-      |wconnect <username> <password>|n
- If you need to create an account, type (without the <>'s):
-      |wcreate <username> <password>|n
-
- If you have spaces in your username, enclose it in quotes.
- Enter |whelp|n for more info. |wlook|n will re-show this screen.
-|y==============================================================|n"""
+|y~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|n
+|y;|n Welcome to |g{settings.SERVERNAME}|n, version {utils.get_evennia_version("short")}!
+|y;|n 
+|y;|n If you have an existing account, connect to it by typing:
+|y;|n      |wconnect <username> <password>|n
+|y;|n If you need to create an account, type (without the <>'s):
+|y;|n      |wcreate <username> <password>|n
+|y;|n 
+|y;|n If you have spaces in your username, enclose it in quotes.
+|y;|n
+|y;|n |yNote|n: your username is the same as your in-game
+|y;|n    character's name! 
+|y;|n
+|y;|n Enter |whelp|n for more info. |wlook|n will re-show this screen.
+|y~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|n
+"""
